@@ -7,10 +7,34 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <script src="scripts/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <div class="test">
-        <p>test</p>
-    </div>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="logo__nav">
+                <a class="header__logo" href="#"></a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Проекты</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Услуги</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Цены</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="call__wrapper">
+                <a class="call__image" href="#"></a>
+                <p class="call__number">+7 777 777 77 77</p>
+            </div>
+            <button class="burger__menu" data-burger aria-label="Open the menu" aria-expanded="false">
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </header>
 </body>
 </html>
