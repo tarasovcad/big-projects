@@ -119,6 +119,11 @@ body {
     margin-right: -18px;
 }
 
+
+/* BURGER__MENU */
+
+
+
 .burger__menu {
     width: 49px;
     height: 30px;
@@ -180,6 +185,10 @@ body {
 .stop-scroll {
     overflow: hidden;
 }
+
+
+/* BURGER__DONE */
+
 
 
 .test {
@@ -261,13 +270,9 @@ body {
     .burger__menu {
         display: block;
     }
-    .header__logo {
-        /* display: none; */
-    }
     .header__wrapper {
         display: block;
     }
-
     .nav__link {
         font-size: 30px;
     }
@@ -279,5 +284,24 @@ body {
     }
     .nav__link {
         font-size: 24px;
+    }
+}
+
+@media (max-width: 420px) {
+    .header {
+        padding: 16px 17px;
+    }
+    .burger__menu {
+        width: 28px;
+        height: 16px;
+    }
+    .header__logo {
+        width: 132px;
+        height: 44px;
+        right: 23px;
+        top: 22px;
+    }
+    .nav__link {
+        font-size: 20px;
     }
 }
