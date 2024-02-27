@@ -6,13 +6,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
     <script src="scripts/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     
 </head>
-<body>
+<body class="body">
+    <!-- Menu Navigation Bar -->
     <header class="header">
         <div class="header__wrapper">
             <div class="logo__nav">
@@ -28,7 +30,7 @@
                 </nav>
             </div>
             <div class="call__wrapper">
-                <a class="call__image" href="#"></a>
+                <div class="call__image" href="#"></div>
                 <p class="call__number">+7 777 777 77 77</p>
             </div>
             <button class="burger__menu" data-burger aria-label="Open the menu" aria-expanded="false">
@@ -36,7 +38,37 @@
             </button>
         </div>
     </header>
-    <div class="test"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, maxime. Quaerat, excepturi nisi suscipit, quis id sed ad fugiat odit, a repellat expedita? Nisi voluptatibus illo incidunt vero nam labore.
-    Voluptatibus fugit excepturi sit cupiditate dolores quibusdam eveniet fugiat deleniti magnam beatae veniam, commodi voluptatum quisquam deserunt debitis. Aliquam dolore sapiente enim dolores quia consequatur soluta blanditiis hic consequuntur modi?</p></div>
+    <!-- Body section -->
+    <main class="body__section">
+        <section class="first__section section">
+            <div class="first__left_side">
+                <div class="first__big_text">
+                    <h1 class="first__h1 h1">Отделка <br> <span class="green">деревянных домов</span> <br> в Москве и области</h1>
+                    <p class="first__paragraph paragraph">с оптимизацией сметы до 30% <br> и гарантией до 15 лет</p>
+                </div>
+                <div class="first__buttons">
+                    <button class="cacl__btn">РАСЧИТАТЬ СТОИМОСТЬ РАБОТ</button>
+                    <a class="inst__logo" href="#">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.25 2.5H8.75C5.29822 2.5 2.5 5.29822 2.5 8.75V21.25C2.5 24.7018 5.29822 27.5 8.75 27.5H21.25C24.7018 27.5 27.5 24.7018 27.5 21.25V8.75C27.5 5.29822 24.7018 2.5 21.25 2.5Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 14.2129C20.1543 15.2532 19.9766 16.3156 19.4922 17.2491C19.0078 18.1826 18.2414 18.9396 17.302 19.4125C16.3626 19.8853 15.2981 20.0499 14.2597 19.8828C13.2214 19.7157 12.2622 19.2255 11.5185 18.4818C10.7749 17.7382 10.2847 16.779 10.1176 15.7406C9.9505 14.7023 10.1151 13.6377 10.5879 12.6983C11.0607 11.7589 11.8177 10.9926 12.7512 10.5082C13.6847 10.0238 14.7472 9.84611 15.7875 10.0004C16.8487 10.1577 17.8311 10.6522 18.5896 11.4108C19.3482 12.1693 19.8426 13.1517 20 14.2129Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.875 8.125H21.8875" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="first__right_side">
+                <div class="first__picture"></div>
+                <div class="first__swip-btn">
+                    <div class="next__step">
+                        <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 18.2121L1.82005 20L12 10L1.82005 0L0 1.78788L8.3599 10L0 18.2121H0Z" fill="#8B9D83"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bcg__vector"></div>
+    </main>
 </body>
 </html>
