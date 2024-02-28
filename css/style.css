@@ -26,6 +26,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
 }
 
+.section {
+    margin-left: 90px;
+    margin-right: 90px;
+
+}
+
 :root {  /* colors */
   --main-bg: #EDE8E2;
   --main-text: #424242;
@@ -35,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 /* z-index for NAV - 1 */
 /* z-index for BURGER__MENU - 10 */
 /* z-index for BCG__VECTOR - -1 */
+
 
 
 /* --------------- */
@@ -193,15 +200,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* BURGER__DONE */
 
-
-
-.test {
-    width: 100vw;
-    height: 100vh;
-}
-
-
-
 @media (max-width : 1430px) {
     .nav__link {
         font-size: 20px;
@@ -313,15 +311,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* FIRST SECTION */
 
-.section {
-    margin-left: 90px;
-    margin-right: 90px;
-
-}
-
-.body__section {
-}
-
 .first__section {
     margin-top: 97px;
     display: flex;
@@ -329,12 +318,10 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-
 .first__left_side {
     margin-top: 13px;
     
 }
-
 
 .first__big_text {
     margin-bottom: 134px;
@@ -372,8 +359,7 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     border-radius: 60px;
 }
-.first__swip-btn {
-}
+
 .green {
     color: var(--second-text);
 }
@@ -433,6 +419,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     margin-bottom: 82px;
+    cursor: pointer;
 }
 
 .first__right_side {
@@ -456,3 +443,35 @@ h1, h2, h3, h4, h5, h6 {
     
 
 }
+
+
+
+@media (max-width: 1400px) {
+    .section {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    .h1 {
+        font-size: 48px;
+    }
+    .paragraph {
+        font-size: 24px;
+    }
+    .first__right_side {
+        gap: 32px;
+    }
+    .first__big_text {
+        margin-bottom: 66px;
+    } 
+    .first__buttons {
+        gap: 30px;
+    }
+    .first__picture {
+        width:  557px;
+        height: 435px;
+    }
+    .next__step {
+        width: 67px;
+        height: 67px;
+    }
+} 
