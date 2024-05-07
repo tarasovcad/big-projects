@@ -1,0 +1,28 @@
+.quiz-wrapper {
+  padding: 194px 110px;
+  h1 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #000;
+  }
+}
+
+.quiz-cards {
+  margin-top: 27px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media screen and (max-width: 1240px) {
+  .quiz-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .quiz-cards {
+    gap: 15px;
+  }
+}
