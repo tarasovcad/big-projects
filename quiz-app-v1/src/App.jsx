@@ -14,14 +14,14 @@ function App() {
   return (
     <div className="wrapper">
       <Header />
-      <div className="quiz-wrapper">
+      {/* <div className="quiz-wrapper">
         <h1>All Quizes</h1>
         <div className="quiz-cards">
           {jsQuizz.map((obj, index) => (
             <Cart title={obj.title} time={obj.time} imageUrl={obj.imageUrl} />
           ))}
         </div>
-      </div>
+      </div> */}
       <Quiz />
     </div>
   );

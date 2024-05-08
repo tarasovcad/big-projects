@@ -1,0 +1,139 @@
+.question-wrapper {
+  max-width: 1030px;
+  padding: 70px 206px 33px 194px;
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  align-items: end;
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  ul {
+    padding: 21px;
+    margin-bottom: 23px;
+    list-style: none;
+    width: 100%;
+    border-radius: 13px;
+    background: rgba(245, 245, 245, 0.48);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    li {
+      height: 75px;
+      cursor: pointer;
+      border-radius: 8px;
+      width: 986px;
+      height: 75px;
+      display: flex;
+      align-items: center;
+      padding-left: 23px;
+      font-weight: 600;
+      font-size: 24px;
+      color: #000;
+    }
+  }
+  p {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 30px;
+    color: #01ab08;
+    transition: all 0.2s ease-in-out;
+  }
+  p:hover {
+    transform: translateX(5px);
+  }
+}
+
+.not-selected {
+  border: 3px solid #d9d9d9;
+}
+
+.right-answer {
+  border: 3px solid #35bd3a;
+}
+
+.wrong-answer {
+  border: 3px solid #ff7a7a;
+}
+
+.ul-backround {
+  background: rgba(245, 245, 245, 0.48);
+  border-radius: 13px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  z-index: -1;
+}
+
+.index {
+  border-radius: 7px;
+  width: 127px;
+  height: 58px;
+  background: #fec33d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 35px;
+  color: #000;
+  margin-top: 31px;
+  margin-bottom: 16px;
+}
+
+.question {
+  width: 100%;
+  font-weight: 600;
+  font-size: 24px;
+  color: #000;
+  border-radius: 13px;
+  width: 100%;
+  height: 147px;
+  background: rgba(245, 245, 245, 0.48);
+  display: flex;
+  align-items: center;
+  padding: 0 43px;
+  position: relative;
+  text-align: left;
+}
+.question-backround {
+  position: absolute;
+  background: rgba(245, 245, 245, 0.48);
+  border-radius: 13px;
+  width: 100%;
+  height: 100%;
+  top: 4px;
+  right: 9px;
+  z-index: -1;
+}
+
+.time {
+  margin: 18px 0;
+  border-radius: 7px;
+  width: 127px;
+  height: 58px;
+  background: rgba(2, 164, 9, 0.43);
+  font-weight: 600;
+  font-size: 35px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.time-backround {
+  top: 3px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 164, 9, 0.43);
+  border-radius: 7px;
+  z-index: -1;
+}
