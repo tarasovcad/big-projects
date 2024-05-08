@@ -8,21 +8,31 @@ import { Quiz } from './components/Quiz/Quiz';
 
 function App() {
   const [currentCart, setCurrentCart] = useState(0);
+  const [showQuiz, setShowQuiz] = useState(false);
   const { title, time, imageUrl } = jsQuizz[currentCart];
-  //let [question, setQuestion] = useState(data[index]);
   console.log(title, time);
   return (
     <div className="wrapper">
       <Header />
-      <div className="quiz-wrapper">
-        <h1>All Quizes</h1>
-        <div className="quiz-cards">
-          {jsQuizz.map((obj, index) => (
-            <Cart title={obj.title} time={obj.time} imageUrl={obj.imageUrl} />
-          ))}
+
+      {showQuiz === true ? (
+        <Quiz />
+      ) : (
+        <div className="quiz-wrapper">
+          <h1>All Quizes</h1>
+          <div className="quiz-cards">
+            {jsQuizz.map((obj, index) => (
+              <Cart
+                key={index}
+                title={obj.title}
+                time={obj.time}
+                imageUrl={obj.imageUrl}
+                setShowQuiz={setShowQuiz}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-      {/* <Quiz /> */}
+      )}
     </div>
   );
 }

@@ -29,9 +29,9 @@ export const Quiz = () => {
       <ul>
         <div className="ul-backround "></div>
         <li className="not-selected">ruby</li>
-        <li className="right-answer">htmlcssdsd</li>
+        <li className="not-selected">htmlcssdsd</li>
         <li className="not-selected">c++</li>
-        <li className="wrong-answer">java</li>
+        <li className="not-selected">java</li>
       </ul>
       <p>
         Next <span>{'>'}</span>

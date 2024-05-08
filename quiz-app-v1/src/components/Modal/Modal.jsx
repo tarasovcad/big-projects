@@ -1,6 +1,6 @@
 import React from 'react';
 import './Modal.scss';
-export const Modal = ({ setCloseModal, removeOverflowHiddenToBody }) => {
+export const Modal = ({ setCloseModal, removeOverflowHiddenToBody, setShowQuiz }) => {
   return (
     <div className="modal-background">
       <div className="modal">
@@ -16,7 +16,13 @@ export const Modal = ({ setCloseModal, removeOverflowHiddenToBody }) => {
             }}>
             Cancel
           </button>
-          <button className="yes">Yes</button>
+          <button
+            className="yes"
+            onClick={() => {
+              setShowQuiz(true);
+            }}>
+            Yes
+          </button>
         </div>
       </div>
     </div>

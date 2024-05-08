@@ -14,6 +14,7 @@ export const Cart = (props) => {
     <>
       {openModal && (
         <Modal
+          setShowQuiz={props.setShowQuiz}
           setCloseModal={setOpenModal}
           removeOverflowHiddenToBody={removeOverflowHiddenToBody}
         />
