@@ -1,22 +1,39 @@
 import React, { useState } from 'react';
 import './Cart.scss';
+import { Modal } from '../Modal/Modal';
 
 export const Cart = (props) => {
-  {
-    console.log(props.title);
-  }
+  const [openModal, setOpenModal] = useState(false);
+  const addOverflowHiddenToBody = () => {
+    document.body.classList.add('overflow-hidden');
+  };
+  const removeOverflowHiddenToBody = () => {
+    document.body.classList.remove('overflow-hidden');
+  };
   return (
-    <div className="cart-wrapper">
-      <img className="image" src={props.imageUrl} alt="" />
-      <div className="cart">
-        <div className="time-backround"> 
-          <p className="time">{props.time} min</p>
-        </div>
+    <>
+      {openModal && (
+        <Modal
+          setCloseModal={setOpenModal}
+          removeOverflowHiddenToBody={removeOverflowHiddenToBody}
+        />
+      )}
+      <div
+        className="cart-wrapper"
+        onClick={() => {
+          setOpenModal(true), addOverflowHiddenToBody();
+        }}>
+        <img className="image" src={props.imageUrl} alt="" />
+        <div className="cart">
+          <div className="time-backround-card">
+            <p className="time-card">{props.time} min</p>
+          </div>
 
-        <div className="title-backround">
-          <p className="title">{props.title}</p>
+          <div className="title-backround">
+            <p className="title">{props.title}</p>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };

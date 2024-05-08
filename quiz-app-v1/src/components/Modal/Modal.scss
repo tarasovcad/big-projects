@@ -1,0 +1,78 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  //width: 900px;
+  background-color: white;
+  padding: 48px;
+  //height: 328px;
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.text-modal {
+  h3 {
+    font-weight: 700;
+    font-size: 35px;
+    color: #000;
+    margin-bottom: 25px;
+  }
+  p {
+    font-weight: 500;
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 60px;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: end;
+}
+.buttons .cancel {
+  border: 3px solid #000;
+  border-radius: 8px;
+  width: 154px;
+  height: 61px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+  margin-right: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+.yes {
+  border: 3px solid #000;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+  width: 114px;
+  height: 61px;
+  background: #000;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.modal-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
